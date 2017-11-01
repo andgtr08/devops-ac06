@@ -61,6 +61,7 @@ def cadastro_cursos(request):
             'cursos': Curso.objects.all(),
             'year':datetime.now().year,
         })
+    )        
 def cadastro_vestibulares(request):
     assert isinstance(request, HttpRequest)
     return render(
