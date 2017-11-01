@@ -57,7 +57,7 @@ def cadastro_cursos(request):
         context_instance = RequestContext(request,
         {
             'title':'Cadastro de cursos',
-#            'cursos': ['ADS' , 'SI', 'CC'],
+            'cursos': ['ADS' , 'SI', 'CC'],
             'cursos': Curso.objects.all(),
             'year':datetime.now().year,
         })
@@ -70,8 +70,8 @@ def cadastro_vestibulares(request):
         'app/cadastro_vestibulares.html',
         context_instance = RequestContext(request,
         {
-                'title':'Cadastro de vestibulares',
-                'vestibulares': Vestibular.objects.all(),
-                'year':datetime.now().year,
+            'title':'Cadastro de vestibulares',
+            'vestibulares': Vestibular.objects.all(),
+            'year':datetime.now().year,
         })
-)
+    )
